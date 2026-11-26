@@ -1,0 +1,47 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-overlay);
+  background-color: rgb(0 0 0 / 0.32);
+  animation: overlayShow var(--animation-duration-normal) cubic-bezier(0.16, 1, 0.3, 1);
+}
+.content {
+  position: fixed;
+  z-index: var(--z-overlay);
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--popup);
+  color: var(--popup-foreground);
+  box-shadow: 0 24px 56px -16px rgb(0 0 0 / 0.32);
+  overflow-y: auto;
+}
+.right { right: 0; border-top-left-radius: var(--radius-md); border-bottom-left-radius: var(--radius-md); animation: slideLeft var(--animation-duration-normal) cubic-bezier(0.16, 1, 0.3, 1); }
+.left { left: 0; border-top-right-radius: var(--radius-md); border-bottom-right-radius: var(--radius-md); animation: slideRight var(--animation-duration-normal) cubic-bezier(0.16, 1, 0.3, 1); }
+.close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--muted-foreground);
+  border: none;
+  cursor: pointer;
+}
+.close:hover { background-color: color-mix(in srgb, var(--foreground) 6%, transparent); color: var(--foreground); }
+.closeIcon { width: 1rem; height: 1rem; }
+.header { display: flex; flex-direction: column; gap: 6px; padding: 20px 24px; padding-right: 56px; border-bottom: 1px solid color-mix(in srgb, var(--foreground) 8%, transparent); }
+.footer { display: flex; flex-direction: column; gap: 8px; margin-top: auto; padding: 14px 24px; border-top: 1px solid color-mix(in srgb, var(--foreground) 8%, transparent); background-color: color-mix(in srgb, var(--foreground) 3%, var(--popup)); }
+.title { margin: 0; font-family: var(--font-family-base); font-size: 1.0625rem; font-weight: 600; line-height: 1.35; }
+
+@keyframes overlayShow { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideLeft { from { transform: translateX(100%); } to { transform: translateX(0); } }
+@keyframes slideRight { from { transform: translateX(-100%); } to { transform: translateX(0); } }

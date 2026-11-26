@@ -1,0 +1,26 @@
+{
+  "name": "wanda-cosmeticos-fashion",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Loja virtual da Wanda Cosméticos & Fashion: perfumes Inuka e moda Shein, com encomendas por WhatsApp.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.6",
+    "@radix-ui/react-slot": "^1.2.3",
+    "lucide-react": "^0.477.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0"
+  }
+}

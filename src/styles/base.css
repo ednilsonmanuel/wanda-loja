@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+
+:root {
+  --z-overlay: 400;
+
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+
+  --background: #fdfaf6;
+  --foreground: #2b2422;
+  --surface: #f6ede4;
+  --card: #fffdfa;
+  --popup: #fffdfa;
+  --popup-foreground: #2b2422;
+
+  --primary: #a65465;
+  --primary-foreground: #ffffff;
+  --accent: #b8995b;
+  --muted: #f1e6dc;
+  --muted-foreground: #6e625c;
+  --error: #b3392f;
+  --border: #e6d7ca;
+
+  --font-family-base: "Montserrat", system-ui, sans-serif;
+  --font-family-display: "Playfair Display", Georgia, serif;
+
+  --shadow: 0 1px 2px rgba(120, 70, 70, 0.06), 0 4px 12px rgba(120, 70, 70, 0.06);
+  --shadow-md: 0 2px 4px rgba(120, 70, 70, 0.06), 0 12px 28px rgba(120, 70, 70, 0.1);
+  --shadow-lg: 0 8px 16px rgba(120, 70, 70, 0.08), 0 28px 60px rgba(120, 70, 70, 0.16);
+
+  --radius-sm: 0.375rem;
+  --radius: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-full: 9999px;
+
+  --animation-duration-fast: 150ms;
+  --animation-duration-normal: 300ms;
+  --animation-duration-slow: 700ms;
+}
