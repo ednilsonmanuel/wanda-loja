@@ -176,6 +176,8 @@
   .ctas, .dots { justify-content: center; }
   .banners, .steps { grid-template-columns: 1fr; }
   .banner { min-height: 20rem; }
+  .bannerShade { background: linear-gradient(180deg, rgba(43, 30, 28, 0.1) 0%, rgba(43, 30, 28, 0.88) 75%); }
+  .h3 { text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35); }
   .section { padding: var(--spacing-12) var(--spacing-4); }
   .lookBody { padding: var(--spacing-8) var(--spacing-6); }
   .cta { text-align: center; }
@@ -191,5 +193,9 @@
   .logo { font-size: 1rem; }
   .bar { padding: 0 var(--spacing-4); }
   .trust { grid-template-columns: 1fr; }
-  .mini { width: 6.5rem; }
+  .combo { flex-wrap: nowrap; gap: 0.4rem; align-items: stretch; }
+  .comboRow { flex: 1 1 0; min-width: 0; align-items: stretch; }
+  .mini { width: 100%; min-width: 0; font-size: 0.68rem; align-content: start; }
+  .mini b { font-size: 0.7rem; }
+  .plus { display: none; }
 }
